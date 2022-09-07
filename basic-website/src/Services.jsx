@@ -115,6 +115,9 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
     }
   }
+
+
+  
 `;
 
 

@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <h2 className="common-heading">Feel Free to Contact us</h2>
+      <h2 className="common-heading">Contact us</h2>
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.386159105913!2d77.5528757144841!3d13.011063417532302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d4b805e4167%3A0xa4c255e80b7e5464!2sOrion%20Mall!5e0!3m2!1sen!2sin!4v1662467866899!5m2!1sen!2sin" width="100%"
         height="450"
@@ -43,7 +43,7 @@ const Contact = () => {
       <div className="container">
         <div className="contact-form">
           <form
-            action="https://formspree.io/f/mqkjebeq"
+            action={process.env.REACT_APP_SECRET_KEY}
             method="POST"
             className="contact-inputs">
             <input
